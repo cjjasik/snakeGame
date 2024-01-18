@@ -1,0 +1,26 @@
+:root {
+    --grid-cols: 1;
+    --grid-rows: 1;
+}
+
+/* reference id using # */
+#container {
+    display: grid;
+    grid-gap: 1em;
+    grid-template-rows: repeat(var(--grid-rows), 1fr);
+    grid-template-columns: repeat(var(--grid-cols), 1fr);
+}
+
+.grid-item {
+    padding: 1em;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.snake {
+    background-color: green;
+}
+
+.apple {
+    background-color: red;
+}
